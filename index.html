@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Neon Cyber-Runner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <!-- Игровой холст -->
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- Интерфейс поверх игры (HUD) -->
+        <div id="hud">
+            <div>ОЧКИ: <span id="score">0</span></div>
+            <div>ХП: <span id="health">100</span>%</div>
+        </div>
+
+        <!-- Экран паузы и проигрыша -->
+        <div id="ui-overlay">
+            <h1 id="ui-title">NEON RUNNER</h1>
+            <p id="ui-subtitle">Нажмите СТАРТ для начала игры</p>
+            <p id="high-score-text">РЕКОРД: <span id="high-score">0</span></p>
+            <button id="start-btn">СТАРТ</button>
+        </div>
+
+        <!-- Кнопка паузы -->
+        <button id="pause-btn">❚❚</button>
+
+        <!-- Сенсорное управление для мобильных устройств -->
+        <div id="touch-controls">
+            <button class="touch-btn" id="btn-left">◄</button>
+            <button class="touch-btn" id="btn-shoot">⚡</button>
+            <button class="touch-btn" id="btn-right">►</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
